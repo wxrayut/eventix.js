@@ -6,7 +6,7 @@ const tsupOptions: Options = {
     sourcemap: false,
     clean: true,
     target: "node20",
-    minify: false,
+    minify: true,
     shims: true,
     skipNodeModulesBundle: true
 } satisfies Options;
