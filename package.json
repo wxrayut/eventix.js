@@ -1,5 +1,5 @@
 {
-  "name": "eventix.js",
+  "name": "@wxrayutz/eventix.js",
   "version": "1.0.0",
   "description": "A fast, flexible commands & events loader for discord.js.",
   "author": {
