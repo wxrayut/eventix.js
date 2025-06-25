@@ -1,0 +1,60 @@
+{
+  "name": "eventix.js",
+  "version": "1.0.0",
+  "description": "A fast, flexible commands & events loader for discord.js.",
+  "author": {
+    "name": "wxrayut",
+    "url": "https://github.com/wxrayut"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/esm/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/esm/index.mjs"
+    }
+  },
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "npx vitest run",
+    "build": "npx tsx build.ts",
+    "pre-release": "npm run test && npm run build",
+    "release": "npm publish"
+  },
+  "homepage": "https://github.com/wxrayut/eventix.js#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wxrayut/eventix.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wxrayut/eventix.js/issues"
+  },
+  "keywords": [
+    "discord",
+    "discord.js",
+    "loader",
+    "commands",
+    "events",
+    "typescript"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "discord.js": "^14.0.0"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "@types/node": "^24.0.3",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}
