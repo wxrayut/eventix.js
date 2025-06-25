@@ -74,7 +74,7 @@ export type EventixOptions<T = unknown> = {
      */
     transform?: (mod: T) => T | T[];
 
-    /* ────────────── Debug & Logging ────────────── */
+    /* ────────────── Lifecycle Callbacks ────────────── */
 
     /**
      * Called when a file is successfully loaded.
