@@ -20,6 +20,8 @@ describe("🧪 Eventix", () => {
             extensions: [".ts"]
         });
 
+        expect(loaded.length).toBeGreaterThan(0);
+
         loaded.forEach((event) => expect(event).toBeInstanceOf(Event));
     });
 
@@ -31,6 +33,8 @@ describe("🧪 Eventix", () => {
             transform: (mod) =>
                 typeof mod === "object" ? Object.values(mod as object) : mod
         });
+
+        expect(loaded.length).toBeGreaterThan(0);
 
         loaded.forEach((command) => expect(command).toBeInstanceOf(Command));
     });
