@@ -5,7 +5,7 @@ A lightweight file loader for loading events and commands from folders — perfe
 ## 📦 Installation
 
 ```
-npm install eventix.js
+npm install @wxrayutz/eventix.js
 ```
 
 ## 🚀 Usage
