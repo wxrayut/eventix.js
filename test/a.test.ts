@@ -195,7 +195,7 @@ describe("🧪 Eventix Options", () => {
             },
             {
                 /* Transforms multiple exports module into
-                   a single array. (See: ./example/commands/__tests__/NultiExport.ts) */
+                   a single array. (See: ./example/commands/__tests__/MultiExport.ts) */
                 transform: (mod) =>
                     typeof mod === "object" ? Object.values(mod as object) : mod
             }
