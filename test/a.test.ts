@@ -225,7 +225,7 @@ describe("🧪 Eventix Options", () => {
             lazy: true,
             /* loads only .js files */
             extensions: [".js"],
-            /* you should get the reason: `unsupported file extension`*/
+            /* you should receive the reason: `unsupported file extension` */
             onSkip: (fp, reason) => calls.push([fp, reason])
         });
 
