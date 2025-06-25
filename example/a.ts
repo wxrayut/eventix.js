@@ -27,6 +27,7 @@ async function example() {
             }
         },
         {
+            args: [client],
             extensions: [".ts"],
             recursive: false
         }
