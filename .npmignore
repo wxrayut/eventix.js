@@ -1,0 +1,15 @@
+node_modules/
+
+src/
+example/
+test/
+
+.editorconfig
+.prettierrc.js
+.gitignore
+tsconfig.json
+vitest.config.ts
+package-lock.json
+
+*.ts
+*.log
