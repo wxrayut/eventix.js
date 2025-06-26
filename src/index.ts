@@ -137,3 +137,4 @@ async function Eventix<T>(
 }
 
 export { Eventix };
+export type { EventixOptions, EventixCallback };
